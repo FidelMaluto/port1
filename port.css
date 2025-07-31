@@ -1,0 +1,210 @@
+*{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+        background-color: #000839;
+        overflow-y: hidden;
+    }
+    .mainP{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .main{
+       /*width: 100%;
+        max-width: 600px;limita o tamanho em telas maiores*/
+            margin: 10px auto;
+            padding: 10px;
+            background: #ccc;
+            text-align: center;
+            width: 350px;
+            padding: 15px;
+            border-radius: 15px;    
+    }     
+        .b img{
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+            border-radius: 100%;
+            cursor: pointer;
+            margin: .3rem;
+        }
+        .b{
+            background-color: #f0f0f0;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+        .icones{
+            display: flex;
+            gap: 10px;/*espaçamento entre os ícones*/
+            margin-bottom: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+        .icones a i{
+            display: flex;
+            background-color: #000839;
+            font-size: 20px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            color: #ccc;
+            transition: .4s;
+        }
+        .icones a i:hover{
+            color: #000839;
+            background-color: #f0f0f0;
+            outline: #000839 auto;
+        }
+        .icones a{
+            text-decoration: none;
+        }
+        .info{
+            display: flex;
+            overflow-y: scroll;
+            background-color: #000839;
+            height: 50vh;
+            border-radius: 10px;
+            color: #ccc;
+        }
+        /*eliminar o botão do scroll, mas manter o funcionamento.*/
+        .info{
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        .info::-webkit-scrollbar{
+            display: none;
+        }
+        #bb{
+            display: flex;
+            box-sizing: border-box;
+            justify-content:space-between;
+        }
+        .sobre h1, p{
+            display: inline-flex;
+        }
+        .sobre h1{
+            font-size: 1rem;
+            color:#0546a8;
+        }
+        .sobre i{
+            color:#0546a8;
+            font-size: 19px;
+        }
+        .sobre p{
+            color: #000839;
+        }
+        .tem{
+            margin: auto;
+        }
+        .tem a{
+            text-decoration: none;
+            font-size: 2rem;
+            color: #0546a8;
+            border-bottom: 1rem;
+        }
+        .tem a:hover{
+            color: #ccc;
+        }
+        .tem button{
+            width: 190px;
+            border-radius: 10px;
+            height: 40px;
+            font-size: 1rem;
+            background-color: #ccc;
+            cursor: pointer;
+            transition: .4s;
+            border: none;
+        }
+        .tem button:hover{
+            background-color: #0546a8;
+            color: #ccc;
+            border-color: #0546a8;
+        }
+        .mens{
+            margin: auto;
+        }
+        .mens a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: .5rem;
+            text-decoration: none;
+            color: #ccc;
+        }
+        .mens span{
+            color: #0546a8;
+            font-size: 1.5rem;
+        }
+        .mens button{
+            width: 190px;
+            border-radius: 10px;
+            height: 40px;
+            font-size: 1rem;
+            background-color: #ccc;
+            cursor: pointer;
+            transition: .4s;
+            border: none;
+        }
+         .mens button:hover{
+            background-color: #0546a8;
+            color: #ccc;
+            border-color: #0546a8;
+        }
+        .perg{
+            margin: auto;
+        }
+        .perg p{
+            margin-bottom: .4px;
+            font-size: 1.4rem;
+        }
+        .perg h2{
+            display: inline-flex;
+            margin-bottom: .6px;
+            color: #0546a8;
+        }
+        .perg h1{
+            color: #0546a8;
+            font-size: 2rem;
+        }
+        .inf{
+            justify-content: center;
+            align-items: center;
+            display: inline-block;
+        }
+        .inf h2, h4{
+            display: inline-flex;
+            margin: 8px 5px 10px auto;
+            margin-top: 18px;
+        }
+        .inf span{
+            color: #0546a8;
+        }
+        .inf p{
+            font-size: 18px;
+        }
+        .inf h3{
+            margin-top: 1%;
+            margin-bottom: 1%;
+        }
+        .inf #spa{
+            color: #9e0404;
+        }
+/*Media quereis para alguns tamanhos mais estreitos*/
+@media (max-width: 450px){
+    .mainP{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70%;
+        margin: 1rem;
+    }
+}

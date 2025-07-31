@@ -1,0 +1,76 @@
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <title>myportifó</title>
+    <link rel="stylesheet" href="port.css">
+</head>
+<body>
+    <section class="mainP">
+        <div class="main">
+        <div class="b" id="bb">
+            <div class="imagem">
+                <img src="IMG-20240704-WA0001~2.jpg" alt="foto" ondblclick="alert('Bem-vindo ao meu Portfólio..!')">
+            </div>
+            <div class="sobre">
+                <h1>FRONT-END</h1> <p>Dev...</p> <br>
+                <i>Fidel Maluto</i><h3>18 <span>anos</span></h3>
+            </div>
+        </div>
+        <div class="icones" class="b">
+            <a href="#"><i class="fas fa-info" id="infor" onclick="mostra('inf')"></i></a>
+            <a href="#"><i class="fas fa-user" id="pergu" onclick="mostra('perg')"></i></a>
+            <a href="#"><i class="fas fa-message" id="mensa" onclick="mostra('mens')"></i></a>
+            <a href="#"><i class="fab fa-linkedin" id="tema" onclick="mostra('tem')"></i></a>
+        </div>
+        <div class="info" class="b">
+           <div id="inf" class="mos-content inf">
+            <!--EDIÇÃO DAS MINHAS INFORMAÇÕES-->
+             <h2>I<span>'</span>M</h2><h2><span>FRONT</span>-<span id="spa">END</span></h2><h4>Dev...</h4>
+             <p>And I'm studing the BACK-END with NODEJS</p>
+             <p>I'm an IT student with gib ideas. I enjoy programming and designing good and medium-sized systems,
+                that can one day solve certain problems. I still in the learning phase, but i'm already preparing
+                myself for the development market!
+             </p>
+           </div>
+           <!--PARTE DA EDIÇÃO DE COMO O SISTEMA FOI CRIADO-->
+           <div id="perg" class="mos-content perg" style="display: none;">
+            <p>Esse Portfólio foi criado com: </p> <br>
+            <h2>HTML,</h2>
+            <h2>CSS</h2> <br> <p>&</p> 
+            <h1>JavaScript </h1>
+           </div>
+           <!--PARTE DA EDIÇÃO DAS MENSAGENS-->
+           <div id="mens" class="mos-content mens" style="display: none;">
+            <a href="https://www.facebook.com/profile.php?id=100077431252025"><span>Facebook</span>: Fidel D.Malutto</a>
+            <a href="https://instagram.com/fidel_malutto19"><span>Instagram</span>: Fidel D.Malutto</a>
+            <a href="https://wa.me/950620392?text=Oi%20Vim%20pelo%20seu%20portifolio"><span>WhatsApp</span>: +244 950620392</a><br>
+            <button>Let's Talk</button>
+           </div>
+           <!-- PARTE DE EDIÇÃO DO LINKEDIN-->
+           <div id="tem" class="mos-content tem" style="display: none;">
+            <a href="https://www.linkedin.com/in/fidel-maluto-26380232a">LinkEdIn</a><br>
+            <button><a href="https://www.linkedin.com/in/fidel-maluto-26380232a">Hire me</a></button>
+           </div>
+        </div><br>
+        <p><i>&copy;fidelmaluto</i></p><br>
+    </div>
+    </section>
+    
+</body>
+<script>
+    // APRESENTAR AS DIVS, UMA DE CADA VEZ(CLICK!)
+
+    function mostra(id){
+        const b = document.querySelectorAll('.mos-content');
+        b.forEach(mos => mos.style.display = 'none');
+        document.getElementById(id).style.display = 'block';
+    }
+    
+</script>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div-ext{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vh;
+            background-color: aqua;
+        }
+        .div-int{
+            background-color: antiquewhite;
+            padding: 20px;
+            max-width: 80%;
+            text-align: center;
+        }
+        /*Media queries para diferentes tamanhos de tela*/
+        @media (max-width: 768px){
+            .div-int{
+                padding: 10px;
+            }
+            img{
+                width: 200px;
+            }
+        }
+        @media (max-width: 480px){
+            .div-int{
+                padding: 5px;
+            }
+            img{
+                width: 45px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div-ext">
+        <div class="div-int">
+            <p>asddd vdfhbsnmvj</p>
+            <p>sdfbcmzx vhjz</p>
+            <img src="IMG-20240704-WA0001[1].jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
